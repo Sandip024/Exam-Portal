@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="4" verbose="0" name="Test(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ep.testCases.TC_006_TransactionsStatusesTest">
+        <methods>
+          <include name="deletSetting"/>
+          <include name="createIdType"/>
+          <include name="openTransactionStatusesPageTest"/>
+          <include name="tearDown"/>
+          <include name="findIfTransactionTypeExistsTest"/>
+          <include name="setup"/>
+          <include name="editIdType"/>
+          <include name="seeDetailsOfTransactionType"/>
+        </methods>
+      </class> <!-- com.ep.testCases.TC_006_TransactionsStatusesTest -->
+      <class name="com.ep.testCases.TC_004_IdentificationTypesTest">
+        <methods>
+          <include name="deletSetting"/>
+          <include name="createIdType"/>
+          <include name="findIfIdTypeExistsTest"/>
+          <include name="openIdTypesPageTest"/>
+          <include name="tearDown"/>
+          <include name="seeDetailsOfIdType"/>
+          <include name="editIdType"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ep.testCases.TC_004_IdentificationTypesTest -->
+      <class name="com.ep.testCases.TC_003_SettingsTest">
+        <methods>
+          <include name="seeDetailsOfSetting"/>
+          <include name="createNewSetting"/>
+          <include name="deletSetting"/>
+          <include name="editSetting"/>
+          <include name="opensettingsPageTest"/>
+          <include name="tearDown"/>
+          <include name="findIfSettingExistsTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ep.testCases.TC_003_SettingsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

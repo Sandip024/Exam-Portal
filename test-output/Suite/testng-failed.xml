@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.ep.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ep.testCases.TC_001_LoginTest">
+        <methods>
+          <include name="loginWithoutUsername"/>
+          <include name="loginWithWrongUserTest"/>
+          <include name="tearDown"/>
+          <include name="loginWithCorrectCredentials"/>
+          <include name="loginWithWrongPassword"/>
+          <include name="setup"/>
+          <include name="loginWithoutPassword"/>
+        </methods>
+      </class> <!-- com.ep.testCases.TC_001_LoginTest -->
+      <class name="com.ep.testCases.TC_005_TransactionTypesTest">
+        <methods>
+          <include name="editIdType"/>
+          <include name="findIfTransactionTypeExistsTest"/>
+          <include name="tearDown"/>
+          <include name="createIdType"/>
+          <include name="setup"/>
+          <include name="seeDetailsOfTransactionType"/>
+          <include name="deletSetting"/>
+        </methods>
+      </class> <!-- com.ep.testCases.TC_005_TransactionTypesTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
